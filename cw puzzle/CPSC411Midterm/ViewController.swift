@@ -620,6 +620,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         grid = Array(repeating: Array(repeating: "", count:13), count:13)
         currentWord.text = ""
         currentArray.removeAll()
+        for i in 1..<170 {
+            if let button = self.view.viewWithTag(i) as? UIButton {
+                button.setTitleColor(UIColor.blue, for: .normal)
+            }
+            
+        }
         updateButtonNames()
     }
     
